@@ -5,11 +5,13 @@ import { SiMongodb } from '@react-icons/all-files/si/SiMongodb';
 import { SiNodeDotJs } from '@react-icons/all-files/si/SiNodeDotJs';
 import { SiPython } from '@react-icons/all-files/si/SiPython';
 import { SiTensorflow } from '@react-icons/all-files/si/SiTensorflow';
-import { SiFlask } from '@react-icons/all-files/si/SiFlask';
+import img_express from '/express.png';
 import { SiHtml5 } from '@react-icons/all-files/si/SiHtml5';
 import { SiCss3 } from '@react-icons/all-files/si/SiCss3';
-import { SiJavascript, SIjavascript } from '@react-icons/all-files/si/SiJavascript';
+import { SiJavascript } from '@react-icons/all-files/si/SiJavascript';
 import { motion } from 'framer-motion';
+
+
 
 function Tech() {
   const animator = (delay) => ({
@@ -100,10 +102,13 @@ function Tech() {
           whileInView='visible'
           animate={infiniteMotion}
           className='border-4 border-neutral-800 p-4 rounded-2xl'>
-          <SiFlask className="text-7xl text-brown-500" />
-          <span className="flex items-center justify-center">Flask</span>
+          <motion.img
+          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="rounded-2xl mb-4" height={30} width={75} src={img_express}/>
+          <span className="flex items-center justify-center">Express</span>
         </motion.div>
-
         <motion.div
           variants={animator(0)}
           initial='hidden'
@@ -132,7 +137,10 @@ function Tech() {
           <span className="flex items-center justify-center">JavaScript</span>
         </motion.div>
 
-             
+
+       
+
+                    
       </div>
     </div>
   );
