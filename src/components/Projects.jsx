@@ -1,6 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import img_dish_duo from "/dishduoo.png"
+import img_wanderlust from "/wanderlust.png"
+import img_weather from "/weather.png"
 import img_birds from "/birds.png"
 import img_chat_u from "/Chat-u.png"
 import img_pp from "/pp.png"
@@ -69,6 +71,103 @@ function Projects() {
 
                 </div>
             </div>
+
+            <div className='flex flex-wrap mb-8 lg:justify-center'>
+                <div className='w-full lg:w-1/4'>
+                    <div>
+                        <motion.img
+                            whileInView={{ x: 0, opacity: 1 }}
+                            initial={{ x: -100, opacity: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="rounded-2xl mb-4" height={200} width={200} src={img_wanderlust} alt='imahe 1' />
+                    </div>
+                </div>
+                <div className='w-full max-w-xl lg:w-3/4'>
+                    <motion.h6
+                        whileInView={{ x: 0, opacity: 1 }}
+                        initial={{ x: 100, opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className='mb-2 font-semibold text-2xl'>Wanderlust</motion.h6>
+                    <motion.p
+                        whileInView={{ x: 0, opacity: 1 }}
+                        initial={{ x: 100, opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className='mb-4 text-neutral-400'> Developed a web-application, enabling users to browse and list travel experiences. Dynamic travel listings with CRUD operations. Responsive UI, Integrated authentication, user management.<a className='text-blue-800' href='https://wander-tour.onrender.com/listings'>Link</a></motion.p>
+                    <motion.span
+                        variants={animator(0)}
+                        initial='hidden'
+                        whileInView='visible'
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>Node.js</motion.span>
+                    <motion.span
+                        variants={animator(0.5)}
+                        initial='hidden'
+                        whileInView='visible'
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>Express.js</motion.span>
+                    <motion.span
+                        variants={animator(1)}
+                        initial='hidden'
+                        whileInView='visible'
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>mongoDB</motion.span>
+                    <motion.span
+                        variants={animator(1.5)}
+                        initial='hidden'
+                        whileInView='visible'
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>HTML,Bootstrap</motion.span>
+                        <motion.span
+                        variants={animator(1.6)}
+                        initial='hidden'
+                        whileInView='visible'
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>mongoAtlas</motion.span>
+
+                </div>
+            </div>
+
+            <div className='flex flex-wrap mb-8 lg:justify-center'>
+                <div className='w-full lg:w-1/4'>
+                    <div>
+                        <motion.img
+                            whileInView={{ x: 0, opacity: 1 }}
+                            initial={{ x: -100, opacity: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="rounded-2xl mb-4" height={200} width={200} src={img_weather} alt='imahe 1' />
+                    </div>
+                </div>
+                <div className='w-full max-w-xl lg:w-3/4'>
+                    <motion.h6
+                        whileInView={{ x: 0, opacity: 1 }}
+                        initial={{ x: 100, opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className='mb-2 font-semibold text-2xl'>Weather-check</motion.h6>
+                    <motion.p
+                        whileInView={{ x: 0, opacity: 1 }}
+                        initial={{ x: 100, opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className='mb-4 text-neutral-400'> Developed a responsive weather application that fetches real-time weather data via API, uses geolocation for local forecasts. <a className='text-blue-800' href='https://weather-app-wazl.vercel.app/'>Link</a></motion.p>
+                    <motion.span
+                        variants={animator(0)}
+                        initial='hidden'
+                        whileInView='visible'
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>React</motion.span>
+                    <motion.span
+                        variants={animator(0.5)}
+                        initial='hidden'
+                        whileInView='visible'
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>HTML</motion.span>
+                    <motion.span
+                        variants={animator(1)}
+                        initial='hidden'
+                        whileInView='visible'
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>OpenWeather API</motion.span>
+                    <motion.span
+                        variants={animator(1.5)}
+                        initial='hidden'
+                        whileInView='visible'
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>materialUI</motion.span>
+
+                </div>
+            </div>
+
+
             <div className='flex flex-wrap mb-8 lg:justify-center'>
                 <div className='w-full lg:w-1/4'>
                     <div>
@@ -104,7 +203,7 @@ function Projects() {
                         variants={animator(1)}
                         initial='hidden'
                         whileInView='visible'
-                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>Express</motion.span>
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>Express.js</motion.span>
                     <motion.span
                         variants={animator(1.5)}
                         initial='hidden'
@@ -148,7 +247,7 @@ function Projects() {
                         variants={animator(1)}
                         initial='hidden'
                         whileInView='visible'
-                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>Html</motion.span>
+                        className='mr-2 rounded px-2 py-1 bg-neutral-900 text-purple-500'>HTML</motion.span>
                     <motion.span
                         variants={animator(1.5)}
                         initial='hidden'
