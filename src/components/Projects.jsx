@@ -92,7 +92,7 @@ function Projects() {
                         whileInView={{ x: 0, opacity: 1 }}
                         initial={{ x: 100, opacity: 0 }}
                         transition={{ duration: 0.5 }}
-                        className='mb-4 text-neutral-400'> Developed a web-application, enabling users to browse and list travel experiences. Dynamic travel listings with CRUD operations. Responsive UI, Integrated authentication, user management.<a className='text-blue-800' href='https://wander-tour.onrender.com/listings'>Link</a></motion.p>
+                        className='mb-4 text-neutral-400'> Developed a web-application, enabling users to browse and list travel experiences. Dynamic travel listings with CRUD operations. Responsive UI, Integrated authentication, user management.<a className='text-blue-800' href='https://wanderlust-2-fm98.onrender.com/listings'>Link</a></motion.p>
                     <motion.span
                         variants={animator(0)}
                         initial='hidden'
